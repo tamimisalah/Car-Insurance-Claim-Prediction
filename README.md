@@ -1,6 +1,6 @@
 # 🚗 Car Insurance Claim Prediction
 
-This repository contains a complete end-to-end machine learning pipeline for predicting car insurance claims using a real-world dataset. The project includes data cleaning, feature engineering, model evaluation, and interpretability techniques.
+This repository contains a complete end-to-end machine learning  for predicting car insurance claims using a real-world dataset. The project includes data cleaning, feature engineering, model evaluation, and interpretability techniques.
 
 ---
 
