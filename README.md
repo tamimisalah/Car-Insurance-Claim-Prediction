@@ -1,87 +1,65 @@
 # 🚗 Car Insurance Claim Prediction
 
-This repository contains a complete end-to-end machine learning  for predicting car insurance claims using a real-world dataset. The project includes data cleaning, feature engineering, model evaluation, and interpretability techniques.
+This repository contains a full machine learning pipeline for predicting car insurance claims, including data processing, feature engineering, model tuning, and interpretability.
 
 ---
 
-## 📊 Sample Visualizations
+## 📊 Visualizations
 
-### 1. Exploratory: Claim Rate by Age Group
-![Claim Rate by Age](images/claim_by_age.png)
+### 1. Claim Rate by Age Group
+![Claim Rate by Age](images/claim_by_age.png)  
+📌 **Insight**: Younger and older age groups (especially 16–25 and 65+) show higher claim rates.
 
-### 2. Exploratory: Claim Rate by Driving Experience
-![Claim Rate by Experience](images/claim_by_experience.png)
+### 2. Claim Rate by Driving Experience
+![Claim Rate by Experience](images/claim_by_experience.png)  
+📌 **Insight**: Drivers with 0–9 years of experience are more likely to file claims. Experience strongly correlates with lower risk.
 
-### 3. PCA Visualization (3D)
-![3D PCA Plot](images/pca_3d.png)
+### 3. PCA 3D Plot
+![3D PCA Plot](images/pca_3d.png)  
+📌 **Insight**: PCA reveals separability in clusters. The model likely finds distinct patterns between those who file claims and those who don’t.
 
-### 4. SHAP Summary Plot
-![SHAP Summary Plot](images/shap_summary.png)
+### 4. SHAP Summary Plot (Real Results)
+![SHAP Summary Plot](images/shap_summary.png)  
+📌 **Insight**: Features like `DRIVING_EXPERIENCE_0-9y`, `VEHICLE_YEAR_before 2015`, and `CREDIT_SCORE` strongly influence predictions. SHAP values confirm feature importance rankings.
 
-### 5. Neural Network Training History
-![Training History](images/nn_accuracy_plot.png)
+### 5. Neural Network Training Accuracy (Real Results)
+![Training History](images/nn_accuracy_plot.png)  
+📌 **Insight**: Model trains well and generalizes reasonably with early stopping. Minor fluctuations are due to dropout and validation split variation.
 
 ---
 
 ## 📂 Project Structure
 
 - `Car_Insurance_Claim.csv` – The dataset
-- `Car_Insurance_DeepLearning_Colab.ipynb` – Main notebook with full modeling workflow
-- `images/` – Contains all reporting-quality visualizations
-- `models/` – Placeholder for saved models (optional)
+- `Car_Insurance_Colab_With_VisualExport.ipynb` – Full notebook with export-ready plots
+- `images/` – All high-quality visualizations
 
 ---
 
 ## 🧠 Models Used
 
-- **Random Forest Classifier** (with permutation importance & feature selection)
-- **KMeans clustering** (used as engineered feature)
-- **PCA** (for 3D interactive visualization)
-- **Neural Network (Keras)** with:
-  - 1 hidden layer
-  - Dropout regularization
-  - Early stopping
-  - Hyperparameter tuning using Keras Tuner
+- **Random Forest**
+- **PCA + Clustering**
+- **Neural Network (Keras)**
+- **Feature Selection (embedded)**
+- **SHAP Explainability**
 
 ---
 
 ## 🧪 Evaluation
 
-- Accuracy, precision, recall, F1-score
-- Confusion matrix
-- SHAP (TreeExplainer)
-- Classification report
+- Confusion Matrix
+- Classification Report
+- SHAP Summary
+- Accuracy Curve
 
 ---
 
-## 🛠️ Tools & Libraries
-
-- `scikit-learn`, `pandas`, `matplotlib`, `plotly`
-- `tensorflow`, `keras`, `keras-tuner`
-- `shap`, `seaborn`
-
----
-
-## 🧾 How to Run
-
-1. Upload `Car_Insurance_Claim.csv` to Colab
-2. Open `Car_Insurance_DeepLearning_Colab.ipynb`
-3. Run all cells to execute data prep, modeling, and visualization
-4. View generated plots in the `images/` directory
-
----
-
-## 🚀 Future Improvements
-
-- Add deployment-ready Flask API or Streamlit dashboard
-- Integrate SHAP-based dashboards
-- Export model using `joblib` or `tf.keras.models.save`
-
----
-
-## 👤 Author
+## 📌 Author
 
 **Salah Aburajab**  
 _Machine Learning & Data Science_
 
-> This project was developed as a complete ML pipeline to demonstrate modeling, tuning, and interpretability skills.
+---
+
+> A portfolio-ready ML project designed to showcase technical skill, end-to-end design, and interpretability best practices.
