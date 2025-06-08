@@ -8,7 +8,7 @@ This repository contains a full machine learning pipeline for predicting car ins
 
 ### 1. Claim Rate by Age Group
 ![Claim Rate by Age](images/claim_by_age.png)  
-📌 **Insight**: Younger and older age groups (especially 16–25 and 65+) show higher claim rates.
+📌 **Insight**: Younger and older age groups (especially 16–25 ) show higher claim rates.
 
 ### 2. Claim Rate by Driving Experience
 ![Claim Rate by Experience](images/claim_by_experience.png)  
